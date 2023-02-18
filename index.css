@@ -1,0 +1,226 @@
+* {   
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }  
+
+body {
+    background-color: rgba(238, 238, 225, 0.95);
+    display: block;
+    height: 100%;
+    overflow: hidden;
+}
+
+header {
+    background-color: #5a372b;
+    height: 15vh;
+    width: 100vw;
+    border-bottom: thick double rgba(238, 238, 225, 0.95);
+}  
+
+.headerDiv {
+    display: flex;	
+    justify-content: center;
+    align-items: center;
+    border: 15px solid  #5a372b;
+}
+
+#replenish {
+    width: 350px;
+    height: 50px;
+    background-color: rgb(32,111,124);
+    color: rgba(238, 238, 225, 0.95);
+    font-family: OCR A Std, monospace;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10%;
+    border: solid  rgba(238, 238, 225, 0.95);
+}
+
+#balance {
+    width: 200px;
+    height: 40px;
+    border-bottom:solid rgba(238, 238, 225, 0.95);
+    color: rgba(238, 238, 225, 0.95);
+    font-family: OCR A Std, monospace;
+    font-size: 30px;
+    text-align: center;
+}
+
+#withdraw {
+    width: 350px;
+    height: 50px;
+    background-color: rgb(32,111,124);
+    color: rgba(238, 238, 225, 0.95);
+    font-family: OCR A Std, monospace;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10%;
+    border: solid  rgba(238, 238, 225, 0.95);
+}
+
+main {
+    height: 85vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#start {
+    position: absolute;
+    z-index: 10;
+    transform: translate(-50%, -50%);
+    background-color:  rgb(238, 238, 225);
+    text-transform: uppercase;
+    border: 5px solid #5a372b;
+    font-weight: bold;
+    font-size: 20px;
+    color: #5a372b;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    font-family: OCR A Std, monospace;
+    cursor: pointer;
+    outline: none;
+    letter-spacing: 1px;
+    top: 57%;
+}
+
+.span {
+    width: 0; 
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 40px solid rgb(238, 238, 225);
+    position: absolute;
+    z-index: 10;
+    top: 46%;
+}  
+   
+.container {
+    width: 500px;
+    height: 500px;
+    background-color: #5a372b;
+    border-radius: 50%;
+    border: 15px solid #5a372b;
+    position: relative;
+    overflow: hidden; 
+    transition: 5s;
+    align-content: flex-start;
+}
+
+.container div {
+    height: 50%;
+    width: 200px;
+    position: absolute;
+    clip-path: polygon(100% 0, 50% 100%, 0 0);
+    transform: translateX(-50%);
+    transform-origin: bottom;
+    text-align: center;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: OCR A Std, monospace;
+    color:rgba(238, 238, 225, 0.95);
+    left: 135px;
+    align-content: flex-start;
+}
+
+.container .div1 {
+    background-color:#448f9a;
+    left: 50%;
+}
+
+.container .div2 {
+    background-color:#206F7C;
+    transform: rotate(45deg);
+}
+
+.container .div3 {
+    background-color:#1d4850;
+    transform: rotate(90deg);
+}
+
+.container .div4 {
+    background-color:#15383d;
+    transform: rotate(135deg);
+}
+
+.container .div5 {
+    background-color:#322c1f;
+    transform: rotate(180deg);
+}
+
+.container .div6 {
+    background-color:#3d362a;
+    transform: rotate(225deg);
+}
+
+.container .div7 {
+    background-color:#4a463f;
+    transform: rotate(270deg);
+}
+
+.container .div8 {
+    background-color:#69655c;
+    transform: rotate(315deg);
+}
+
+#modal_window {
+    display: " ";
+    position: fixed;
+    z-index: 11;
+    padding-top: 100px; 
+    left: 0;
+    top: 15%;
+    width: 100%; 
+    height: 85%;
+    overflow: auto; 
+    background-color: rgb(238, 238, 225); 
+}
+
+#modal_content {
+    background-color: #5a372b;
+    margin: auto;
+    /* padding: 50px; */
+    border-radius: 34%;
+    width: 40%;
+    height: 80%;
+}
+
+#heading {
+    color:rgb(238, 238, 225);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: OCR A Std, monospace;
+    font-size: 50px;
+    text-align: center;
+}
+
+#p1 {
+    color:rgb(238, 238, 225);
+    padding: 5px;
+    text-align: justify;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: OCR A Std, monospace;
+    font-size: 20px;
+}
+
+#close {
+    width: 200px;
+    height: 50px;
+    background-color: #206F7C;
+    color: rgba(238, 238, 225, 0.95);
+    font-family: OCR A Std, monospace;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10%;
+    border: solid  rgba(238, 238, 225, 0.95);
+    margin-left: 30%;
+    margin-top: 66px; 
+}
